@@ -1,0 +1,27 @@
+{
+  "name": "my-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "dev": "nodemon --exec babel-node ./src/index.js",
+    "webpack:debug": "npm run debug -- --mode development",
+    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
+    "debugthis": "node --inspect --inspect-brk ./src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^4.44.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "nodemon": "^2.0.4",
+    "webpack-cli": "^3.3.12"
+  }
+}
